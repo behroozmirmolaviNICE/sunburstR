@@ -58,7 +58,7 @@ HTMLWidgets.widget({
 
         sunburst.chartFrame().size({height: height});
         sunburst.label(function(d) {
-          return d.name;
+          return d.name.substring(0,20);
         });
         sunburst.color(function(d) {
           return colors.call(this, d.name, d);
