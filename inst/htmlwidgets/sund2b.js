@@ -57,6 +57,7 @@ HTMLWidgets.widget({
         }
 
         sunburst.chartFrame().size({height: height});
+		
         sunburst.label(function(d) {
           return d.name.length > 25 ? d.name.substring(0,25) + "..." : d.name;
         });
